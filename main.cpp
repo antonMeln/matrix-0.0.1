@@ -22,9 +22,9 @@ void input(int a[3][3]) {
   }
 }
 
-int proiz( int a[3][3],int b[3][3]){
+void proiz( int a[3][3],int b[3][3]){
    int c[3][3];
-   bool f = true;
+    
    for (int i = 0;i<3;i++){
        for (int j = 0;j<3;j++){
            c[i][j]=0;
@@ -35,10 +35,10 @@ int proiz( int a[3][3],int b[3][3]){
           }
           cout << "\n";
     }
-    return c[3][3];
+    
 }
 
-int plus( int a[3][3],int b[3][3]){
+void pls( int a[3][3],int b[3][3]){
   int c[3][3];
   for (int i = 0;i<3;i++){
        for (int j = 0;j<3;j++){
@@ -50,10 +50,10 @@ int plus( int a[3][3],int b[3][3]){
           }
           cout << "\n";
     } 
-    return c[3][3];
+    
 }
 
-bool minus(int a[3][3], int b[3][3]) {
+void min(int a[3][3], int b[3][3]) {
   int c[3][3];
   for (int i = 0;i<3;i++){
        for (int j = 0;j<3;j++){
@@ -65,7 +65,7 @@ bool minus(int a[3][3], int b[3][3]) {
           }
           cout << "\n";
     }
-    return c[3][3];
+   
 }
 
 
@@ -86,8 +86,8 @@ int main(){
 switch (op){
   
   case '*' : proiz(a,b); break;
-  case '+' : plus(a,b) ; break;
-  case '-' : minus(a,b); break;
+  case '+' : pls(a,b) ; break;
+  case '-' : min(a,b); break;
   default: cout << "error";
     
 }
